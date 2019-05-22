@@ -1,14 +1,14 @@
 {
-    "name": "starAtlas",
+    "name": "{{name}}",
     "version": "1.0.0",
-    "description": "A nodejs project",
+    "description": "{{description}}",
     "main": "index.js",
     "_mitan": true,
     "_mitanType": "nodeReact",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "creator": "bianlanzhou &lt;bianlanzhou@gmail.com&gt;",
+    "creator": "{{author}}",
     "license": "ISC",
     "dependencies": {
         "@fmd/component-pro": "0.0.2",
