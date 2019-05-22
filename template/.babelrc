@@ -1,0 +1,13 @@
+{
+    "plugins": [
+        ["import", [{
+                "libraryName": "@fmd/component-pro",
+                "style": "css"
+            },
+            {
+                "libraryName": "@fmd/component-pro-view",
+                "style": "css"
+            }]
+        ]
+    ]
+}

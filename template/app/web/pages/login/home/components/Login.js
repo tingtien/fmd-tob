@@ -181,7 +181,7 @@ export default class Login extends Component {
                   onChange={this.onChangeUser}
                   ref={node => this.usernameInput = node}
                   name="username"
-                  autocomplete="off"
+                  autoComplete="off"
                 />
                 <div className={styles.tips}>{usenameTips}</div>
                 <Input.Password
@@ -194,7 +194,7 @@ export default class Login extends Component {
                   name="pwd"
                   onFocus={this.onFocus}
                   onBlur={this.onBlur}
-                  autocomplete="off"
+                  autoComplete="off"
                 />
                 <div className={styles.tips}>{pwdTips}</div>
                 {/* <div className={styles.code}>
