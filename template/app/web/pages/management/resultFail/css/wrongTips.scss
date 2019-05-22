@@ -1,0 +1,29 @@
+
+.resultExtra{
+    padding: 24px 40px;
+    text-align: left;
+    background: #fafafa;
+    border-radius: 2px;
+    .resultExtraOne{
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    
+    .resultExtraTwo{
+        margin-bottom: 16px;
+        .resultExtraTwoIconX{
+            color: rgb(245, 34, 45);
+            margin-right: 8px;
+        }
+        a{
+            margin-left: 16px;
+            background-color: transparent;
+            text-decoration: none;
+            outline: none;
+            cursor: pointer;
+            transition: color .3s;
+        }
+    }
+}

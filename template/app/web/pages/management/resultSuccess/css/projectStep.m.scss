@@ -1,0 +1,31 @@
+
+.resultExtra{
+    padding: 24px 40px;
+    text-align: left;
+    background: #fafafa;
+    border-radius: 2px;
+    .resultExtraOne{
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+    .resultExtraTwopart{
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 16px;
+        height: auto;
+        zoom: 1;
+        display: block;
+        box-sizing: border-box;
+        .resultExtraTwopartEvery{
+            display: block;
+            box-sizing: border-box;
+            float: left;
+            flex: 0 0 auto;
+        }
+        
+    }
+   
+}

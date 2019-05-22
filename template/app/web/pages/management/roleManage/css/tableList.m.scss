@@ -1,0 +1,67 @@
+
+@import '@common/css/global.scss';
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.addForm {
+  background-color: white;
+  padding: 30px 0 15px 0;
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 24px;
+      margin-right: 0;
+      display: flex;
+      > .ant-form-item-label {
+        width: auto;
+        line-height: 32px;
+        padding-right: 8px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
+
+.modalClass{
+  :global(.ant-modal-body) {
+    background-color: #f0f2f5;
+    height: 575px;
+    overflow-y: auto;
+  }
+}
+
+
+
+@media screen and (max-width: $screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+}

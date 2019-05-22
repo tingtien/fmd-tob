@@ -1,0 +1,24 @@
+{
+    "name": "starAtlas",
+    "version": "1.0.0",
+    "description": "A nodejs project",
+    "main": "index.js",
+    "_mitan": true,
+    "_mitanType": "nodeReact",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "creator": "bianlanzhou &lt;bianlanzhou@gmail.com&gt;",
+    "license": "ISC",
+    "dependencies": {
+        "@fmd/component-pro": "0.0.2",
+        "@fmd/component-pro-view": "0.0.7",
+        "@fmd/module": "0.0.1",
+        "mitan-node": "latest",
+        "mo-js": "^0.288.2",
+        "moment": "^2.24.0"
+    },
+    "devDependencies": {
+        "mitan-react-release": "latest"
+    }
+}

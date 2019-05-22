@@ -1,0 +1,434 @@
+
+@import '@common/css/global.scss';
+body{
+    height:100%;
+    overflow: hidden;
+}
+.bg{
+    .bgWrap{
+        position: absolute;
+        width: 456px;
+        left: 50%;
+        margin-left: -228px;
+        top: 50%;
+        transform: translateY(-50%);
+        .bgHeader{
+            text-align: center;
+            .headerLogo{
+                width: 210px;
+                height: 48px;
+                margin: 0 auto;
+            }
+            h1{
+                font-size: 14px;
+                color: #636570;
+                text-align: center;
+            }
+        }
+        .wrapLogin{
+            .loginIcon{
+                    height: 64px;
+                    width: 74px;
+                    position: relative;
+                    left: 50%;
+                    margin-left: -37px;
+                .loginpwdIcon{
+                    width: 74px;
+                    height: 64px;
+                    position: relative;
+                    top: 16px;
+                    left: 50%;
+                    margin-left: -37px;
+                    z-index: -1;
+                    background: url('../img/open-eyes.png') no-repeat 0 0;
+                    &.on{
+                        background-image: url('../img/close-eyes.png');
+                    }
+                }
+                .pwdCommon{
+                    width: 20px;
+                    height: 18px;
+                    background: #fff;
+                    position: absolute;
+                    border-radius: 30px;
+                    box-shadow: 0 1px 3px 0 rgba(107,121,206,0.20);
+                    border: 1px solid #f2f2f2;
+                    bottom: -10px;
+                }
+                .leftHand{
+                    right: -3px;
+                }
+                .rightHand{
+                    left: -4px;
+                }
+            }
+            .errortips{
+                width: 376px;
+                position: absolute;
+                z-index: 1;
+                left: 50%;
+                top: 26%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-183px);
+            }
+            .loginMiddle{
+                width: 456px;
+                background: #FFFFFF;
+                border-radius: 15px;
+                box-shadow: 1px -1px 10px #999;
+                text-align: center;
+                padding: 50px 0px 30px 0px;
+                .tips{
+                    width: 346px;
+                    text-align: left;
+                    margin-left: 53px;
+                    color: red;
+                    font-size:13px;
+                    position: absolute;
+                }
+                .username{
+                    width:376px;
+                    height:40px;
+                    input{
+                        background: #FFFFFF;
+                        border: 1px solid #E5E6EA;
+                        border-radius: 20px;
+                    }
+                    input:focus {
+                        border: 1px solid #4C60BF;
+                    }
+                    
+                }
+                .iptPwd{
+                    margin-top:25px;
+                    width:376px;
+                    height:40px;
+                    input{
+                        background: #FFFFFF;
+                        border: 1px solid #E5E6EA;
+                        border-radius: 20px;
+                    }
+                        input:focus {
+                        border: 1px solid #4C60BF;
+                    }
+                }
+
+                .code{
+                    margin-top:25px;
+                    .codeIpt{
+                        width:246px;
+                        height:40px;
+                        input{
+                            padding-left:80px;
+                            background: #FFFFFF;
+                            border: 1px solid #E5E6EA;
+                            border-radius: 20px;
+                        }
+                            input:focus {
+                            border: 1px solid #4C60BF;
+                        }
+                    }
+                    .codeImg{
+                        margin-left:2px;
+                        display: inline-block;
+                        background: #FFFFFF;
+                        border: 1px solid #E5E6EA;
+                        border-radius: 20px;
+                        height:40px;
+                        width:130px;
+                        line-height: 36px;
+                        img{
+                            height:33px;
+                        }
+                        .icodeImgReload{
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .pwdTip{
+                    margin-top:16px;
+                    height:40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    .remember{
+                        margin-left: 53px;
+                        float: left;
+                        color: #636570;
+                        label{
+                            cursor: pointer;
+                        }
+                    }
+                    .forget{
+                        display: inline-block;
+                        margin-right: 53px;
+                        float: right;
+                        color: #4C60BF;
+                        cursor: pointer;
+                    }
+                }
+                .mobileDisplay{
+                    display: none;
+                }
+            }
+
+            .loginBtn{
+                position: relative;
+                text-align: center;
+                background: #fff;
+                width: 108px;
+                height: 108px;
+                left: 50%;
+                top: -54px;
+                margin-left: -54px;
+                border-radius: 0 0 80px 80px;
+                border: 0;
+                .pcDisplay{
+                    display: block;
+                }
+                .mobileDisplay{
+                    display: none;
+                }
+                .btnIn{
+                    position: absolute;
+                    width: 5.714286rem;
+                    height: 5.714286rem;
+                    border-radius: 5.714286rem;
+                    background: #4C60BF;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -40px;
+                    margin-left: -40px;
+                    cursor: pointer;
+                    .btnEnter{
+                        color: #fff;
+                        position: absolute;
+                        font-size: 40px;
+                        top: 20px;
+                        left: 20px;
+                    }
+                }
+            }
+
+        }
+    }
+    .footer {
+        text-align: center;
+        color: #646671;
+        font-size: 12px;
+        position: fixed;
+        bottom: 30px;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: $screen-sm) {
+    body{
+        background: url("../img/login-bgm.jpg") no-repeat bottom center;
+        background-size: cover;
+    }
+    .bg{
+        .bgWrap{
+            position: absolute;
+            width: 100%; 
+            height: 80%;
+            left: 50%;
+            margin-left: 0; 
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            padding-bottom: 24px;
+            .wrapLogin{
+                .loginIcon{
+                    height: 64px;
+                    .loginpwdIcon{
+                        width: 100%;
+                        height: 64px;
+                        position: relative;
+                        top: 16px;
+                        left: 50%;
+                        margin-left: -50%;
+                        z-index: -1;
+                        background: url('../img/open-eyes.png') no-repeat 0 0;
+                        &.on{
+                            background-image: url('../img/close-eyes.png');
+                        }
+                    }
+                    .pwdCommon{
+                        width: 20px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        border-radius: 30px;
+                        box-shadow: 0 1px 3px 0 rgba(107,121,206,0.20);
+                        border: 1px solid #f2f2f2;
+                        bottom: -10px;
+                    }
+                    .leftHand{
+                        right: -3px;
+                        z-index:1;
+                    }
+                    .rightHand{
+                        left: -4px;
+                        z-index:1;
+                    }
+                }
+                .errortips{
+                        width: 95%;
+                        font-size: 14px;
+                        margin: 0 auto;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: auto;
+                    }
+                .loginMiddle{
+                    background: none; 
+                    border-radius: 0; 
+                    -webkit-box-shadow:none;
+                    box-shadow: none;
+                    width: 100%;
+                    position: relative;
+                    padding:0px;
+                    // .show-pc{
+                    //     display: none;
+                    // }
+                    .itips{
+                        width: 95%;
+                        text-align: left;
+                        margin-left: 5%;
+                        color: red;
+                        font-size:13px;
+                        position: absolute;
+                    }
+                    .username{
+                        width:95%;
+                        height:40px;
+                        input{
+                            background: #FFFFFF;
+                            border: 1px solid #E5E6EA;
+                            border-radius: 20px;
+                        }
+                        input:focus {
+                            border: 1px solid #4C60BF;
+                        }
+                        
+                    }
+                    .iptPwd{
+                        margin-top:25px;
+                        width:95%;
+                        height:40px;
+                        input{
+                            background: #FFFFFF;
+                            border: 1px solid #E5E6EA;
+                            border-radius: 20px;
+                        }
+                        input:focus {
+                            border: 1px solid #4C60BF;
+                        }
+                    }
+                    .code{
+                        width:95%;
+                        margin: 25px auto 0 auto;
+                        .codeIpt{
+                            width:60%;
+                            height:40px;
+                            input{
+                                padding-left:80px;
+                                background: #FFFFFF;
+                                border: 1px solid #E5E6EA;
+                                border-radius: 20px;
+                            }
+                            input:focus {
+                                border: 1px solid #4C60BF;
+                            }
+                        }
+                        .codeImg{
+                            display: inline-block;
+                            background: #FFFFFF;
+                            border: 1px solid #E5E6EA;
+                            border-radius: 20px;
+                            height:40px;
+                            margin-left:2%;
+                            width:38%;
+                            line-height: 36px;
+                            img{
+                                height:33px;
+                                border-radius: 20px;
+                            }
+                            .icodeImgReload{
+                                cursor: pointer;
+                                position:absolute;
+                                line-height: 40px;
+                                right: 5%;
+                            }
+                        }
+                    }
+                    .pwdTip{
+                        height:40px;
+                        line-height: 40px;
+                        font-size: 14px;
+                        width:95%;
+                        margin:16px auto 0 auto;
+                    .remember{
+                        width:50%;
+                        display: inline-block;
+                        color: #636570;
+                        margin: 0;
+                        text-align: left;
+                        label{
+                            cursor: pointer;
+                        }
+                    }
+                    .forget{
+                        width:50%;
+                        display: inline-block;
+                        color: #4C60BF;
+                        cursor: pointer;
+                        margin: 0;
+                        text-align: right;
+                    }
+                    }
+                   
+                }
+                .loginBtn{
+                    width: 95%;
+                    height: 35px;
+                    margin-left: 0;
+                    background:none;
+                    position: relative;
+                    left: 50%;
+                    top: 15px;
+                    transform: translate(-50%,-50%);
+                    .pcDisplay{
+                        display: none;
+                    }
+                     .mobileDisplay{
+                        display: block;
+                    }
+                    .btnInto{
+                        color: #fff;
+                        width: 100%;
+                        line-height: 40px;
+                        background-color: #1890FF;
+                        border-color: #1890FF;
+                        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+                        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+                        left: 50%;
+                        margin-left: 0; 
+                        border-radius: 6px;
+                        position: absolute;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media (min-width: $screen-sm) {
+    body{
+        background: url("../img/login-bg.jpg") no-repeat bottom center;
+        background-size: cover;
+    }
+}

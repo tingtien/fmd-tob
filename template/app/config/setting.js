@@ -1,0 +1,1 @@
+module.exports = {"propsLayout":"leftmenu","color":"#1890FF","theme":"dark","fixedHeader":true,"widthStatus":"Fluid","fixedSider":true}

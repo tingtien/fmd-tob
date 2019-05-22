@@ -1,0 +1,150 @@
+/**/
+
+html {
+    font-size: 87.5%;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    height: 1.5;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Microsoft Yahei', sans-serif;
+    //user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    //overflow: hidden;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+a:focus {
+    outline: none;
+}
+
+h2 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+ul li {
+    list-style: none
+}
+
+ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+    & li {
+        list-style-position: outside;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    & td {
+        word-break: break-all;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.none {
+    display: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    *height: 1%;
+}
+.themeColor .colorBlock{
+    margin-bottom: 3px;
+}
+@media(max-width:576px){
+    .ant-divider{
+        display: block;
+    }
+    
+}
+
+// Medium screen / desktop// Media queries breakpoints
+//// Extra small screen / phone
+$screen-xs : 480px;
+$screen-xs-min : $screen-xs;
+
+// Small screen / tablet
+$screen-sm : 576px;
+$screen-sm-min : $screen-sm;
+
+// Medium screen / desktop
+$screen-md : 768px;
+$screen-md-min : $screen-md;
+
+// Large screen / wide desktop
+$screen-lg : 992px;
+$screen-lg-min : $screen-lg;
+
+// Extra large screen / full hd
+$screen-xl : 1200px;
+$screen-xl-min : $screen-xl;
+
+// Extra extra large screen / large descktop
+$screen-xxl : 1600px;
+$screen-xxl-min : $screen-xxl;
+
+$border-radius-base:500px;
+$border-color-split:#e8e8e8;
+$heading-color:rgba(0, 0, 0, 0.85);
+$font-size-base : 14px;
+$font-size-lg : $font-size-base + 2px;
+$text-color-secondary: rgba(0, 0, 0, 0.45);
+$text-color:rgba(0,0,0,0.65);
+$heading-color : rgba(0,0,0,0.85);
+$red-6: #f5222d;
+$green-6: #52c41a;
+$blue-6: #1890ff;
+$primary-color : $blue-6;
+.fm-bread.ant-breadcrumb {
+    padding: 16px 24px;
+    background-color: #fff;
+}
+
+.ant-card .ant-card-body {
+    padding: 12px;
+}
+
+.ant-card.ant-card-wider-padding .ant-card-body {
+    padding: 12px;
+}
