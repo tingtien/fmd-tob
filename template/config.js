@@ -10,6 +10,6 @@ module.exports = {
     vendorMultiple: {
         fmd: ["@fmd/component-pro"],
     },
-    webpackFilterDll: ['@fmd/module'],
+    webpackFilterDll: ['@fmware/theme'],
     disableRem: true, // 禁用rem
 };
