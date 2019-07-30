@@ -1,0 +1,37 @@
+// Medium screen / desktop// Media queries breakpoints
+//// Extra small screen / phone
+$screen-xs : 480px;
+$screen-xs-min : $screen-xs;
+
+// Small screen / tablet
+$screen-sm : 576px;
+$screen-sm-min : $screen-sm;
+
+// Medium screen / desktop
+$screen-md : 768px;
+$screen-md-min : $screen-md;
+
+// Large screen / wide desktop
+$screen-lg : 992px;
+$screen-lg-min : $screen-lg;
+
+// Extra large screen / full hd
+$screen-xl : 1200px;
+$screen-xl-min : $screen-xl;
+
+// Extra extra large screen / large descktop
+$screen-xxl : 1600px;
+$screen-xxl-min : $screen-xxl;
+
+$border-radius-base:500px;
+$border-color-split:#e8e8e8;
+$heading-color:rgba(0, 0, 0, 0.85);
+$font-size-base : 14px;
+$font-size-lg : $font-size-base + 2px;
+$text-color-secondary: rgba(0, 0, 0, 0.45);
+$text-color:rgba(0,0,0,0.65);
+$heading-color : rgba(0,0,0,0.85);
+$red-6: #f5222d;
+$green-6: #52c41a;
+$blue-6: #1890ff;
+$primary-color : $blue-6;
