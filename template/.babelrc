@@ -1,13 +1,16 @@
 {
-    "plugins": [
-        ["import", [{
-                "libraryName": "@fmd/component-pro",
-                "style": "css"
-            },
-            {
-                "libraryName": "@fmd/component-pro-view",
-                "style": "css"
-            }]
-        ]
+  "plugins": [
+    ["import", {
+        "libraryName": "@fmd/component-pro",
+        "style": "css"
+      },
+      "component-pro"
+    ],
+    ["import", {
+        "libraryName": "@fmd/component-pro-view",
+        "style": "css"
+      },
+      "component-pro-view"
     ]
+  ]
 }
