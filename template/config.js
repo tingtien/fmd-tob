@@ -12,4 +12,5 @@ module.exports = {
     },
     webpackFilterDll: ['@fmware/theme'],
     disableRem: true, // 禁用rem
+    codeCheck: "off"
 };

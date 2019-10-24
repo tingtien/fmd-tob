@@ -16,7 +16,7 @@ import {
   message,
   Modal,
 } from '@fmd/component-pro';
-import styles from '../css/tableList.m.scss';
+import styles from '../css/list.m.scss';
 import { addAuthUser, unallocatedList } from '@common/api';
 import moment from 'moment';
 

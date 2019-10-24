@@ -17,7 +17,7 @@ import {
   message,
   Spin
 } from '@fmd/component-pro';
-import styles from './css/tableList.m.scss';
+import styles from '../css/user.m.scss';
 import { WrapContent } from '@fmd/component-pro-view';
 import DepartModal from '@common/DepartModal';
 import { addUser, editUser, postList, roleList, userDetail } from '@common/api';

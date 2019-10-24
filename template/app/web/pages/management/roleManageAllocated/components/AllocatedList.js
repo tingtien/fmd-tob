@@ -17,10 +17,10 @@ import {
   message,
   Popconfirm
 } from '@fmd/component-pro';
-import styles from './css/tableList.m.scss';
+import styles from '../css/list.m.scss';
 import { WrapContent } from '@fmd/component-pro-view';
 import { allocatedList, cancelAuthUser, cancelAllAuthUser } from '@common/api';
-import AddAuthUser from './components/AddAuthUser';
+import AddAuthUser from './AddAuthUser';
 import moment from 'moment';
 
 const FormItem = Form.Item;

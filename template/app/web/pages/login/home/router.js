@@ -4,9 +4,7 @@
  * @Description: 
  */
 
-module.exports = [
-    {
-        path: '/user/login',
-        component: './components/Login'
-    }
-];
+module.exports = {
+  path: '/user/login',
+  component: './components/Login'
+};

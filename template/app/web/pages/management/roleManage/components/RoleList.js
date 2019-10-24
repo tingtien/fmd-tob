@@ -20,10 +20,10 @@ import {
   Divider,
   Badge
 } from '@fmd/component-pro';
-import styles from './css/tableList.m.scss';
+import styles from '../css/list.m.scss';
 import { WrapContent } from '@fmd/component-pro-view';
 import { roleList, delRole } from '@common/api';
-import AddOrEditRole from './components/AddOrEditRole';
+import AddOrEditRole from './AddOrEditRole';
 
 const FormItem = Form.Item;
 const statusMap = {
