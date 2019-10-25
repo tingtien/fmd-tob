@@ -20,11 +20,11 @@ import {
   Divider,
   Badge
 } from '@fmd/component-pro';
-import styles from './css/tableList.m.scss';
+import styles from '../css/tableList.m.scss';
 import { WrapContent } from '@fmd/component-pro-view';
 import { userList, delUser } from '@common/api';
 import moment from 'moment';
-import ResetPassword from './components/ResetPassword';
+import ResetPassword from './ResetPassword';
 
 const FormItem = Form.Item;
 const sexMap = {

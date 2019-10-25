@@ -1,5 +1,5 @@
 module.exports = {
-  path: '/management/role/allocated',
-  component: './AllocatedList',
+  path: '/management/role',
+  component: './components/RoleList',
   loading: true
 };

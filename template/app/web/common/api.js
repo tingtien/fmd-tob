@@ -4,7 +4,7 @@
  * @Description: 项目用到的所有后端接口
  */
 import httpRequest from './httpRequest';;
-const apiServer = MI.apiServer;
+const apiServer = MI.config.apiServer;
 
 // 用户登录
 export const login = params => {

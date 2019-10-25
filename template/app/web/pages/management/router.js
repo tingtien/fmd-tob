@@ -99,8 +99,8 @@ class ModalSwitch extends Component {
 
     return (
       <Layout
-        isSetting={MI.setting}
-        basename={MI.reactRoute}
+        isSetting={MI.config.setting}
+        basename={MI.config.reactRoute}
         title='StarAtlas Admin'
         rightHeaderContent={[
           <UserCenter
@@ -138,7 +138,7 @@ class ModalSwitch extends Component {
 }
 
 export default () => (
-  <Router basename={MI.reactRoute}>
+  <Router basename={MI.config.reactRoute}>
     <Route component={ModalSwitch} />
   </Router>
 );
