@@ -1,15 +1,11 @@
 module.exports = {
-    port: 3033,
-    domain: "http://10.1.56.11:3033",
+  port: 3033,
+  URL: "http://10.1.56.11:3033",
+  config: {
     staticURL: "//10.1.56.11:3033",
-    globalJs: {
-        reactRoute: '',
-        setting: false,
-        apiServer: 'http://10.1.56.133:8008' // 测试
-    },
-    vendorMultiple: {
-        fmd: ["@fmd/component-pro"],
-    },
-    webpackFilterDll: ['@fmd/module'],
-    disableRem: true, // 禁用rem
+    reactRoute: '',
+    setting: false,
+    apiServer: 'http://10.1.56.133:8008' // 测试
+  },
+  webpackFilterDll: ["@fmware/theme", "@fmd/component-pro", "@fmd/component-pro-view"]
 };

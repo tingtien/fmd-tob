@@ -1,16 +1,12 @@
 module.exports = {
-    port: 3000,
-    domain: "http://localhost:3000",
+  port: 3000,
+  URL: "http://localhost:3000",
+  config: {
     staticURL: "//localhost:3000",
-    globalJs: {
-        reactRoute: '',
-        setting: true,
-        apiServer: 'http://localhost:3000'
-    },
-    vendorMultiple: {
-        fmd: ["@fmd/component-pro"],
-    },
-    webpackFilterDll: ['@fmware/theme'],
-    disableRem: true, // 禁用rem
-    codeCheck: "off"
+    reactRoute: '',
+    setting: true,
+    apiServer: 'http://localhost:3000'
+  },
+  webpackFilterDll: ["@fmware/theme", "@fmd/component-pro", "@fmd/component-pro-view"],
+  codeCheck: "off"
 };
