@@ -17,7 +17,6 @@ import { logoutApi } from '@common/api';
 class ModalSwitch extends Component {
   constructor(props) {
     super(props);
-    this.previousLocation = this.props.location;
 
     let menuData = [];
     let userInfo = null;
@@ -58,23 +57,13 @@ class ModalSwitch extends Component {
     return false;
   }
 
-  componentWillUpdate(nextProps) {
-    const { location } = this.props;
-    if (
-      nextProps.history.action !== 'POP' &&
-      (!location.state || !location.state.modal)
-    ) {
-      this.previousLocation = nextProps.history.location;
-    }
-  }
-
   logoutConfirm = () => {
     const handleOk = () => {
       logoutApi().then(res => {
         if (res.success) {
           window.sessionStorage.clear();
           setTimeout(() => {
-            window.location.href = '/user/login';
+            window.location.href = '/login/index';
           }, 600);
         }
       });
@@ -91,12 +80,6 @@ class ModalSwitch extends Component {
   render() {
     const { menu } = this.state;
     const { location } = this.props;
-    const isModal = !!(
-      location.state &&
-      location.state.modal &&
-      this.previousLocation !== location // not initial render
-    );
-
     return (
       <Layout
         isSetting={MI.config.setting}
@@ -116,7 +99,7 @@ class ModalSwitch extends Component {
           changeParentState={paramsObj => this.setState(paramsObj)}
         />
         <Switch
-          location={isModal ? this.previousLocation : location}
+          location={location}
         >
           {
             routes.map((item, index) => {

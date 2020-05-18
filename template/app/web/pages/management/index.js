@@ -20,5 +20,5 @@ if (isLogin()) {
         document.getElementById('root')
     );
 } else {
-    window.location.href = '/user/login';
+    window.location.href = '/login/index';
 }

@@ -25,7 +25,7 @@ axios.interceptors.response.use(response => {
   } else {
     resData.success = false;
     if (resData.message === '请先登录') {
-      window.location.href = '/user/login';
+      window.location.href = '/login/index';
     }
 
     // 兼容布局样式设置

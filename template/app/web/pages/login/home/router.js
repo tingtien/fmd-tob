@@ -5,6 +5,6 @@
  */
 
 module.exports = {
-  path: '/user/login',
+  path: '/login/index',
   component: './components/Login'
 };

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@common/*": ["app/web/common/*"]
+    }
+  },
+  "include": ["app"]
+}
