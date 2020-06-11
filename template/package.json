@@ -14,11 +14,11 @@
     "@fmd/component-pro": "0.0.2",
     "@fmd/component-pro-view": "0.0.7",
     "@fmware/theme": "0.0.1",
-    "mitan-node": "3.3.0",
+    "mitan-node": "3.3.3",
     "mo-js": "^0.288.2",
     "moment": "^2.24.0"
   },
   "devDependencies": {
-    "mitan-react-release": "3.3.10"
+    "mitan-react-release": "3.4.3"
   }
 }
