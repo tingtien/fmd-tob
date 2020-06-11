@@ -163,7 +163,7 @@ export default class Login extends Component {
           <div className={styles.bgWrap}>
             <div className={styles.bgHeader}>
               <div className={styles.headerLogo}><img src={fmLogo} /></div>
-              <h1>重庆富民银行交互平台登陆系统</h1>
+              <h1>重庆XXXX交互平台登陆系统</h1>
             </div>
             <div className={styles.wrapLogin}>
               <div className={styles.loginIcon}>
@@ -251,7 +251,7 @@ export default class Login extends Component {
               }
             </div>
           </div>
-          <div className={styles.footer}>Copyright 2019 富民银行UED出品</div>
+          <div className={styles.footer}>Copyright 2019 XXXXUED出品</div>
         </div>
       </Fragment>
     );

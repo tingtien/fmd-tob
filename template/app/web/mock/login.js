@@ -29,7 +29,7 @@ module.exports = {
                         "parentId": null,
                         "roleId": null,
                         "loginName": "admin",
-                        "userName": "富民",
+                        "userName": "XX",
                         "email": "ry@163.com",
                         "phonenumber": "15888888888",
                         "sex": "0",
